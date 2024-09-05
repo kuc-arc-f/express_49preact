@@ -2,5 +2,5 @@
   "watch": ["src"],
   "ext": "ts,tsx,css", 
   "ignore": ["src/**/*.txt"],
-  "exec": "bun run build && NODE_ENV=develop bun run ./dist/index.js"
+  "exec": "npm run build && NODE_ENV=develop node ./dist/index.js"
 }
