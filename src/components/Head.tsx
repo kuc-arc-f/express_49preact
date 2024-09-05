@@ -7,7 +7,7 @@ export default function Compo(props: any) {
     <a href="/button" class="ms-2" >[ Button ]</a>
     <a href="/card" class="ms-2" >[ Card ]</a>
     <a href="/alert_dialog" class="ms-2" >[ AlertDialog ]</a>
-    
+    <a href="/navigation_menu" class="ms-2" >[ NavigationMenu ]</a>
     <hr />
   </div>
   );

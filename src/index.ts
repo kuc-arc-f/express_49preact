@@ -5,6 +5,7 @@ import Button from './pages/Button';
 import Card from './pages/Card';
 import Test from './pages/Test';
 import AlertDialog from './pages/AlertDialog';
+import NavigationMenu from './pages/NavigationMenu';
 //
 import testRouter from './routes/test'; 
 //
@@ -19,6 +20,9 @@ const errorObj = {ret: "NG", messase: "Error"};
 app.use('/api/test', testRouter);
 
 //MPA
+app.get('/navigation_menu', (req: any, res: any) => {
+  try {res.send(NavigationMenu({}));} catch (error) { res.sendStatus(500);}
+});
 app.get('/alert_dialog', (req: any, res: any) => {
   try {res.send(AlertDialog({}));} catch (error) { res.sendStatus(500);}
 });
