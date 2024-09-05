@@ -2,10 +2,16 @@ import express from "express";
 import Top from './pages/App';
 import About from './pages/About';
 import Button from './pages/Button';
+import Card2 from './pages/Card2';
 import Card from './pages/Card';
 import Test from './pages/Test';
 import AlertDialog from './pages/AlertDialog';
 import NavigationMenu from './pages/NavigationMenu';
+import Input from './pages/Input';
+import TextArea from './pages/TextArea';
+import Select from './pages/Select';
+import Radio from './pages/Radio';
+import CheckBox from './pages/CheckBox';
 //
 import testRouter from './routes/test'; 
 //
@@ -20,6 +26,21 @@ const errorObj = {ret: "NG", messase: "Error"};
 app.use('/api/test', testRouter);
 
 //MPA
+app.get('/checkbox', (req: any, res: any) => {
+  try {res.send(CheckBox({}));} catch (error) { res.sendStatus(500);}
+});
+app.get('/radio', (req: any, res: any) => {
+  try {res.send(Radio({}));} catch (error) { res.sendStatus(500);}
+});
+app.get('/input', (req: any, res: any) => {
+  try {res.send(Input({}));} catch (error) { res.sendStatus(500);}
+});
+app.get('/textarea', (req: any, res: any) => {
+  try {res.send(TextArea({}));} catch (error) { res.sendStatus(500);}
+});
+app.get('/select', (req: any, res: any) => {
+  try {res.send(Select({}));} catch (error) { res.sendStatus(500);}
+});
 app.get('/navigation_menu', (req: any, res: any) => {
   try {res.send(NavigationMenu({}));} catch (error) { res.sendStatus(500);}
 });
@@ -28,6 +49,9 @@ app.get('/alert_dialog', (req: any, res: any) => {
 });
 app.get('/card', (req: any, res: any) => {
   try {res.send(Card({}));} catch (error) { res.sendStatus(500);}
+});
+app.get('/card2', (req: any, res: any) => {
+  try {res.send(Card2({}));} catch (error) { res.sendStatus(500);}
 });
 app.get('/test', (req: any, res: any) => {
   try {res.send(Test({}));} catch (error) { res.sendStatus(500);}

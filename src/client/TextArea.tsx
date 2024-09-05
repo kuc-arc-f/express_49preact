@@ -31,30 +31,11 @@ export default function App() {
   return (
   <div className="container mx-auto my-2 px-8 bg-white">
     <Head />
-    <h1 className="text-4xl font-bold">Card</h1>
+    <h1 className="text-4xl font-bold">TextArea</h1>
     <hr className="my-2" />
-    <Card className="w-[350px]">
-      <CardHeader>
-        <CardTitle>Create Card Item</CardTitle>
-        <CardDescription>information , title</CardDescription>
-      </CardHeader>
-      <CardContent>
-        <form>
-          <div className="grid w-full items-center gap-4">
-            <div className="flex flex-col space-y-1.5">
-              <Label htmlFor="name">Name</Label>
-              <Input id="name" placeholder="Name 123" />
-            </div>
-          </div>
-        </form>
-      </CardContent>
-      <CardFooter className="flex justify-between">
-        <Button variant="outline">Cancel</Button>
-        <Button>Deploy</Button>
-      </CardFooter>
-    </Card>    
+    <Label>TextArea</Label>
+    <Textarea id="textarea" />
   </div>
-
   )
 }
 render(<App />, document.getElementById('app')!);
