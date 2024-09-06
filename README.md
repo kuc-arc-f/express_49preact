@@ -6,7 +6,7 @@
 
  date   : 2024/09/01
  
- update : 2024/09/05
+ update : 2024/09/05 
 
 ***
 
@@ -29,6 +29,7 @@ yarn dev
 ***
 ### blog
 
+* https://knakatech-blog.pages.dev/books/12
 
 ***
 # License
