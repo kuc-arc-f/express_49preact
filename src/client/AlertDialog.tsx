@@ -1,6 +1,5 @@
 import { useState } from 'preact/hooks'
 import { render } from 'preact'
-//import { BellRing, Check } from "lucide-react"
 
 import Head from '../components/Head'
 

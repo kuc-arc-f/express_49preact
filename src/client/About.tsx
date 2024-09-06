@@ -14,13 +14,10 @@ export default function App() {
       <div>
       </div>
       <h1 class="text-4xl font-bold">About</h1>
-      <hr />
-      <div class="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          [ count ]  is {count}
-        </button>
-      </div>
-      <hr />
+      <hr class="my-2" />
+      <span>visit:  https://github.com/kuc-arc-f/express_49preact
+      </span>
+      <hr class="my-2" />
     </div>
   </>
   )

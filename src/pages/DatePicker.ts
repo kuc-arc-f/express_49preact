@@ -1,10 +1,10 @@
 import renderLayout from './renderLayout';
-let PATH__ENTRY_CLIENT = "/static/Htmx1.js";
+let PATH__ENTRY_CLIENT = "/static/DatePicker.js";
 
 //
 export default function Page(props: any) { 
   if(process.env.NODE_ENV === "production") {
-    PATH__ENTRY_CLIENT = "/public/static/Htmx1.js";
+    PATH__ENTRY_CLIENT = "/public/static/DatePicker.js";
   }
   //
   const htm = `
@@ -13,5 +13,8 @@ export default function Page(props: any) {
     <script type="module" src="${PATH__ENTRY_CLIENT}"></script>
   </div>
   `;
-  return renderLayout({children: htm, title: "Htmx1"});
+  return renderLayout({children: htm, title: "DatePicker"});
 }
+/*
+<h1>Home</h1>
+*/

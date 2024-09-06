@@ -12,6 +12,7 @@ import TextArea from './pages/TextArea';
 import Select from './pages/Select';
 import Radio from './pages/Radio';
 import CheckBox from './pages/CheckBox';
+import DatePicker from './pages/DatePicker';
 //
 import testRouter from './routes/test'; 
 //
@@ -26,6 +27,9 @@ const errorObj = {ret: "NG", messase: "Error"};
 app.use('/api/test', testRouter);
 
 //MPA
+app.get('/datepicker', (req: any, res: any) => {
+  try {res.send(DatePicker({}));} catch (error) { res.sendStatus(500);}
+});
 app.get('/checkbox', (req: any, res: any) => {
   try {res.send(CheckBox({}));} catch (error) { res.sendStatus(500);}
 });
