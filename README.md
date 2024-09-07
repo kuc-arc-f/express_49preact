@@ -45,7 +45,7 @@ yarn dev
 * https://knakatech-blog.pages.dev/books/12
 
 ***
-#### CHANGELOG
+#### Change Log
 * VER_0_9_1: new project
 
 ***
