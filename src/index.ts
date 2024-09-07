@@ -14,7 +14,6 @@ import Radio from './pages/Radio';
 import CheckBox from './pages/CheckBox';
 import DatePicker from './pages/DatePicker';
 import Table from './pages/Table';
-import DataTable from './pages/DataTable';
 //
 import testRouter from './routes/test'; 
 //
@@ -29,9 +28,6 @@ const errorObj = {ret: "NG", messase: "Error"};
 app.use('/api/test', testRouter);
 
 //MPA
-app.get('/datatable', (req: any, res: any) => {
-  try {res.send(DataTable({}));} catch (error) { res.sendStatus(500);}
-});
 app.get('/table', (req: any, res: any) => {
   try {res.send(Table({}));} catch (error) { res.sendStatus(500);}
 });
