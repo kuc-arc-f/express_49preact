@@ -59,6 +59,11 @@ export default function App() {
              <button class="btn-outline-blue">Select</button>
           </a>
         </div>
+        <div class="p-2">
+          <a href="/table">
+             <button class="btn-outline-blue">Table</button>
+          </a>
+        </div>
 
       </div>
     </div>
