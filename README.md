@@ -6,7 +6,7 @@
 
  date   : 2024/09/01
  
- update : 2024/09/05 
+ update : 2024/09/07 
 
 ***
 
@@ -28,6 +28,7 @@ https://stackblitz.com/~/github.com/kuc-arc-f/express_49preact
 * TextArea
 * Radio
 * Select
+* Table
 
 ***
 ### build
