@@ -36,6 +36,10 @@ export default function App() {
           </a>
         </div>
         <div class="p-2">
+          <a href="/datatable"><button class="btn-outline-blue">DataTable</button>
+          </a>
+        </div>
+        <div class="p-2">
           <a href="/input"><button class="btn-outline-blue">input</button>
           </a>
         </div>
@@ -64,7 +68,7 @@ export default function App() {
              <button class="btn-outline-blue">Table</button>
           </a>
         </div>
-
+        
       </div>
     </div>
     
