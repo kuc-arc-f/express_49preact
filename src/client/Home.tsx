@@ -60,6 +60,12 @@ export default function App() {
           </a>
         </div>
         <div class="p-2">
+          <a href="/switch">
+             <button class="btn-outline-blue">Switch</button>
+          </a>
+        </div>
+
+        <div class="p-2">
           <a href="/table">
              <button class="btn-outline-blue">Table</button>
           </a>
