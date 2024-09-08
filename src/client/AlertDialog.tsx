@@ -16,6 +16,8 @@ import {
 } from "@/components/ui/alert-dialog"
 import { Button } from "@/components/ui/button"
 
+import TestDialog1 from './AlertDialog/TestDialog1';
+//
 export default function App() {
   return (
   <div className="container mx-auto my-2 px-8 bg-white">
@@ -40,6 +42,9 @@ export default function App() {
         </AlertDialogFooter>
       </AlertDialogContent>
     </AlertDialog>
+    <hr className="my-2" />
+    <TestDialog1 />
+    <hr className="my-2" />
   </div>
   )
 }
