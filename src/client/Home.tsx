@@ -48,6 +48,10 @@ export default function App() {
           </a>
         </div>
         <div class="p-2">
+          <a href="/form"><button class="btn-outline-blue">Form</button>
+          </a>
+        </div>
+        <div class="p-2">
           <a href="/input"><button class="btn-outline-blue">input</button>
           </a>
         </div>

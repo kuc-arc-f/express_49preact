@@ -6,6 +6,7 @@ import Card2 from './pages/Card2';
 import Card from './pages/Card';
 import Calendar from './pages/Calendar';
 import Dialog from './pages/Dialog';
+import Form from './pages/Form';
 import Test from './pages/Test';
 import AlertDialog from './pages/AlertDialog';
 import NavigationMenu from './pages/NavigationMenu';
@@ -40,6 +41,9 @@ app.get('/table', (req: any, res: any) => {
 });
 app.get('/progress', (req: any, res: any) => {
   try {res.send(Progress({}));} catch (error) { res.sendStatus(500);}
+});
+app.get('/form', (req: any, res: any) => {
+  try {res.send(Form({}));} catch (error) { res.sendStatus(500);}
 });
 app.get('/dialog', (req: any, res: any) => {
   try {res.send(Dialog({}));} catch (error) { res.sendStatus(500);}
