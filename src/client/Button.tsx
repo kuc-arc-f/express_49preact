@@ -1,7 +1,5 @@
 import { useState } from 'preact/hooks'
 import { render } from 'preact'
-//import { App } from './About/app.tsx'
-//console.log("#about.tsx");
 import Head from '../components/Head'
 // 
 import { Button } from "@/components/ui/button"

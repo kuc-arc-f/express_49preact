@@ -32,7 +32,19 @@ export default function App() {
           </a>
         </div>
         <div class="p-2">
+          <a href="/calendar" class="" ><button class="btn-outline-blue">Calendar</button>
+          </a>
+        </div>
+        <div class="p-2">
           <a href="/checkbox"><button class="btn-outline-blue">CheckBox</button>
+          </a>
+        </div>
+        <div class="p-2">
+          <a href="/dialog"><button class="btn-outline-blue">Dialog</button>
+          </a>
+        </div>
+        <div class="p-2">
+          <a href="/datepicker"><button class="btn-outline-blue">DatePicker</button>
           </a>
         </div>
         <div class="p-2">
@@ -47,6 +59,11 @@ export default function App() {
         <div class="p-2">
           <a href="/textarea">
              <button class="btn-outline-blue">TextArea</button>
+          </a>
+        </div>
+        <div class="p-2">
+          <a href="/progress">
+             <button class="btn-outline-blue">Progress</button>
           </a>
         </div>
         <div class="p-2">

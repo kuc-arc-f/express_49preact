@@ -4,6 +4,8 @@ import About from './pages/About';
 import Button from './pages/Button';
 import Card2 from './pages/Card2';
 import Card from './pages/Card';
+import Calendar from './pages/Calendar';
+import Dialog from './pages/Dialog';
 import Test from './pages/Test';
 import AlertDialog from './pages/AlertDialog';
 import NavigationMenu from './pages/NavigationMenu';
@@ -13,8 +15,9 @@ import Select from './pages/Select';
 import Radio from './pages/Radio';
 import CheckBox from './pages/CheckBox';
 import DatePicker from './pages/DatePicker';
-import Table from './pages/Table';
+import Progress from './pages/Progress';
 import Switch from './pages/Switch';
+import Table from './pages/Table';
 //
 import testRouter from './routes/test'; 
 //
@@ -35,12 +38,23 @@ app.get('/switch', (req: any, res: any) => {
 app.get('/table', (req: any, res: any) => {
   try {res.send(Table({}));} catch (error) { res.sendStatus(500);}
 });
+app.get('/progress', (req: any, res: any) => {
+  try {res.send(Progress({}));} catch (error) { res.sendStatus(500);}
+});
+app.get('/dialog', (req: any, res: any) => {
+  try {res.send(Dialog({}));} catch (error) { res.sendStatus(500);}
+});
 app.get('/datepicker', (req: any, res: any) => {
   try {res.send(DatePicker({}));} catch (error) { res.sendStatus(500);}
+});
+app.get('/calendar', (req: any, res: any) => {
+  try {res.send(Calendar({}));} catch (error) { res.sendStatus(500);}
 });
 app.get('/checkbox', (req: any, res: any) => {
   try {res.send(CheckBox({}));} catch (error) { res.sendStatus(500);}
 });
+//Dialog
+
 app.get('/radio', (req: any, res: any) => {
   try {res.send(Radio({}));} catch (error) { res.sendStatus(500);}
 });
