@@ -81,6 +81,11 @@ export default function App() {
           </a>
         </div>
         <div class="p-2">
+          <a href="/sheet">
+             <button class="btn-outline-blue">Sheet</button>
+          </a>
+        </div>
+        <div class="p-2">
           <a href="/switch">
              <button class="btn-outline-blue">Switch</button>
           </a>

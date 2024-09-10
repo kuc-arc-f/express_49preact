@@ -11,13 +11,14 @@ import Test from './pages/Test';
 import AlertDialog from './pages/AlertDialog';
 import NavigationMenu from './pages/NavigationMenu';
 import Input from './pages/Input';
-import TextArea from './pages/TextArea';
 import Select from './pages/Select';
+import Sheet from './pages/Sheet';
 import Radio from './pages/Radio';
 import CheckBox from './pages/CheckBox';
 import DatePicker from './pages/DatePicker';
 import Progress from './pages/Progress';
 import Switch from './pages/Switch';
+import TextArea from './pages/TextArea';
 import Table from './pages/Table';
 //
 import testRouter from './routes/test'; 
@@ -67,6 +68,9 @@ app.get('/input', (req: any, res: any) => {
 });
 app.get('/textarea', (req: any, res: any) => {
   try {res.send(TextArea({}));} catch (error) { res.sendStatus(500);}
+});
+app.get('/sheet', (req: any, res: any) => {
+  try {res.send(Sheet({}));} catch (error) { res.sendStatus(500);}
 });
 app.get('/select', (req: any, res: any) => {
   try {res.send(Select({}));} catch (error) { res.sendStatus(500);}
